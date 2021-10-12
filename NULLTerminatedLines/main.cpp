@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<Windows.h>
 #include<string.h>
 #include <ctype.h>
@@ -6,7 +6,7 @@ using namespace std;
 
 void StringLength(string* str)
 {
-	cout << "Количество символов в строке: " << endl;
+	cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РІ СЃС‚СЂРѕРєРµ: " << endl;
 
 	cout << size(*str) << endl;
 }
@@ -18,43 +18,43 @@ void main()
 	//char str[] = { 'H', 'e', 'l', 'l', 'o', '\0' };
 	//const int n = 20;
 	//char str[20] = {};
-	//cout << "Введите строку: "; 
+	//cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ: "; 
 	////cin >> str;
 	//SetConsoleCP(1251);
 	//SetConsoleOutputCP(1251);
-	//cin.getline(str, n); //str - строка; n - размер строки
+	//cin.getline(str, n); //str - СЃС‚СЂРѕРєР°; n - СЂР°Р·РјРµСЂ СЃС‚СЂРѕРєРё
 	//cout << str << endl;
-	//cout << "Введите строку: "; 
+	//cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ: "; 
 	
 	string str;
-	cout << "Введите что нибудь в строку: " << endl;
+	cout << "Р’РІРµРґРёС‚Рµ С‡С‚Рѕ РЅРёР±СѓРґСЊ РІ СЃС‚СЂРѕРєСѓ: " << endl;
 	cin >> str;
 	StringLength(&str);
 	cout << endl << endl;
 
-	//или без использования функции
+	//РёР»Рё Р±РµР· РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ С„СѓРЅРєС†РёРё
 
-	cout << "Вот есть фраза \"Hello, World!\"" << endl;
+	cout << "Р’РѕС‚ РµСЃС‚СЊ С„СЂР°Р·Р° \"Hello, World!\"" << endl;
 	const char string[] = "Hello, World!";
-	cout << "Количество значений в строке: ";
+	cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ Р·РЅР°С‡РµРЅРёР№ РІ СЃС‚СЂРѕРєРµ: ";
 	cout << strlen(string) << endl;
 	cout << endl << endl;
 
 
 	char a;
-	cout << "Введите букву нижнего регистра:" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ Р±СѓРєРІСѓ РЅРёР¶РЅРµРіРѕ СЂРµРіРёСЃС‚СЂР°:" << endl;
 	cin >> a;
 	a = toupper(a);
 	
-	cout << endl << "Та же буква в верхнем регистре: " << a;
+	cout << endl << "РўР° Р¶Рµ Р±СѓРєРІР° РІ РІРµСЂС…РЅРµРј СЂРµРіРёСЃС‚СЂРµ: " << a;
 	cout << endl << endl;
 
 
 	char b;
-	cout << "Введите букву верхнего регистра:" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ Р±СѓРєРІСѓ РІРµСЂС…РЅРµРіРѕ СЂРµРіРёСЃС‚СЂР°:" << endl;
 	cin >> b;
 	b = tolower(b);
 
-	cout << endl << "Та же буква в нижнем регистре: " << b;
+	cout << endl << "РўР° Р¶Рµ Р±СѓРєРІР° РІ РЅРёР¶РЅРµРј СЂРµРіРёСЃС‚СЂРµ: " << b;
 }
 
