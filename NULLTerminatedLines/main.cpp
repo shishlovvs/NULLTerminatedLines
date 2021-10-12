@@ -15,9 +15,7 @@ void StringLength(string* str)
 void main()
 {
 	setlocale(LC_ALL, "ru");
-	
 	//char str[] = { 'H', 'e', 'l', 'l', 'o', '\0' };
-
 	//const int n = 20;
 	//char str[20] = {};
 	//cout << "Введите строку: "; 
@@ -33,6 +31,15 @@ void main()
 	cin >> str;
 	StringLength(&str);
 	cout << endl << endl;
+
+	//или без использования функции
+
+	cout << "Вот есть фраза \"Hello, World!\"" << endl;
+	const char string[] = "Hello, World!";
+	cout << "Количество значений в строке: ";
+	cout << strlen(string) << endl;
+	cout << endl << endl;
+
 
 	char a;
 	cout << "Введите букву нижнего регистра:" << endl;
